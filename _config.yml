@@ -56,8 +56,8 @@ plugins:
 
 author:
   name   : "Carlo Leonardi"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  avatar : "/assets/images/IMG_6834_new.jpg"
+  bio    : "Bioinformatics, Data Science, AI"
   links:
     - label: "Email"
       icon: "fas fa-envelope"
