@@ -23,7 +23,7 @@ search: true
 
 # Build settings
 markdown: kramdown
-remote_theme: mmistakes/minimal-mistakes
+remote_theme: jekyll-theme-basically-basic
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
@@ -68,6 +68,9 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/carloelle"
+    - label: "Google Scholar"
+      icon: "ai ai-google-scholar"
+      url: "https://scholar.google.com/citations?user=K723OxUAAAAJ&hl=en"
 
 footer:
   links:
@@ -77,6 +80,9 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url:  "https://github.com/carloelle"
+    - label: "Google Scholar"
+      icon: "ai ai-google-scholar"
+      url: "https://scholar.google.com/citations?user=K723OxUAAAAJ&hl=en"
 
 defaults:
   # _posts
