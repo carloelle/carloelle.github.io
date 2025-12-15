@@ -1,10 +1,8 @@
-# Basic site info
 title: "Carlo Leonardi"
 description: "Computational Immunology, AI, Computational Biology"
 email: "c.leonardi95@protonmail.com"
 lang: en-GB
 
-# Use the Retlab theme from GitHub
 plugins:
   - jekyll-remote-theme
   - jekyll-seo-tag
@@ -17,20 +15,13 @@ plugins:
   - jekyll-paginate
 
 remote_theme: benbalter/retlab
-
-# GitHub branch name for this site (your repo uses "master")
 branch: master
-
-# Pages to include in the top navigation
 nav_pages:
   - index.html
   - _pages/about.md
-
-# Pages to link in the footer (optional, create this file later if you like)
 footer_pages:
   - _pages/fine-print.md
 
-# Social / contact links (used by Retlab)
 contact_links:
   - name: Email
     url: "mailto:c.leonardi95@protonmail.com"
@@ -45,7 +36,6 @@ contact_links:
     url: "https://scholar.google.com/citations?user=K723OxUAAAAJ&hl=en"
     icon: graduation-cap
 
-# Front matter defaults – layouts that Retlab actually provides
 defaults:
   - scope:
       path: ""
@@ -60,7 +50,6 @@ defaults:
       layout: page
       comments: false
 
-# Exclude from build
 exclude:
   - vendor/bundle/
   - node_modules/
@@ -73,5 +62,4 @@ exclude:
   - "*.json"
   - "*.ts"
 
-# Pretty URLs for posts/pages
 permalink: pretty
