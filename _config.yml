@@ -1,70 +1,91 @@
+# Site settings
 title: "Carlo Leonardi"
-description: "Computational Immunology, AI, Computational Biology"
 email: "c.leonardi95@protonmail.com"
-lang: en-GB
+description: "Computational Immunology, AI, Computational Biology"
+twitter_username: "CarloLeonardi7"
+github_username: "carloelle"
+minimal_mistakes_skin: "default"
+search: true
 
-remote_theme: benbalter/retlab
+# Build settings
+markdown: kramdown
 
-permalink: pretty
+# Use Minimal Mistakes as a remote theme
+remote_theme: "mmistakes/minimal-mistakes@4.27.3"
+
+# Outputting
+permalink: /:categories/:title/
+paginate: 5
+paginate_path: /page:num/
 timezone: Europe/London
 
 include:
   - _pages
 
-nav_pages:
-  - index.html
-  - about.md
+# Plugins (GitHub Pages–friendly)
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
 
+author:
+  name   : "Carlo Leonardi"
+  avatar : "/img/header.jpg"   # or wherever your image really lives
+  bio    : "Bioinformatics, Data Science, AI"
+  links:
+    - label: "Email"
+      icon: "fas fa-envelope"
+      url:  "mailto:c.leonardi95@protonmail.com"
+    - label: "X"
+      icon: "fa-brands fa-x-twitter"
+      url: "https://x.com/CarloLeonardi7"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/carloelle"
+    - label: "Google Scholar"
+      icon: "ai ai-google-scholar"
+      url: "https://scholar.google.com/citations?user=K723OxUAAAAJ&hl=en"
 
-contact_links:
-  - name: Email
-    url: "mailto:c.leonardi95@protonmail.com"
-    icon: envelope
-  - name: GitHub
-    url: "https://github.com/carloelle"
-    icon: github
-  - name: X
-    url: "https://x.com/CarloLeonardi7"
-    icon: twitter
-  - name: Google Scholar
-    url: "https://scholar.google.com/citations?user=K723OxUAAAAJ&hl=en"
-    icon: graduation-cap
-
+footer:
+  links:
+    - label: "X"
+      icon: "fa-brands fa-x-twitter"
+      url: "https://x.com/CarloLeonardi7"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url:  "https://github.com/carloelle"
+    - label: "Google Scholar"
+      icon: "ai ai-google-scholar"
+      url: "https://scholar.google.com/citations?user=K723OxUAAAAJ&hl=en"
 
 defaults:
+  # _posts
   - scope:
       path: ""
-      type: "posts"
+      type: posts
     values:
-      layout: post
+      layout: single
+      author_profile: true
+      read_time: true
       comments: true
+      share: true
+      related: true
+
+  # _pages
   - scope:
-      path: ""
-      type: "pages"
+      path: "_pages"
+      type: pages
     values:
-      layout: page
-      comments: false
+      layout: single
+      author_profile: true
 
+category_archive:
+  type: liquid
+  path: /categories/
 
-plugins:
-  - jekyll-seo-tag
-  - jekyll-avatar
-  - jekyll-github-metadata
-  - jekyll-feed
-  - jekyll-include-cache
-  - jekyll-sitemap
-  - jemoji
-  - jekyll-paginate
-
-
-exclude:
-  - vendor/bundle/
-  - node_modules/
-  - js/
-  - sass/
-  - script/
-  - prettier.config.js
-  - "*.gem"
-  - "*.gemspec"
-  - "*.json"
-  - "*.ts"
+tag_archive:
+  type: liquid
+  path: /tags/
