@@ -4,23 +4,33 @@ description: "Computational Immunology, AI, Computational Biology"
 email: "c.leonardi95@protonmail.com"
 lang: en-GB
 
-# Theme
+# Use the Retlab theme from GitHub
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-avatar
+  - jekyll-github-metadata
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-sitemap
+  - jemoji
+  - jekyll-paginate
+
 remote_theme: benbalter/retlab
 
-# URL / permalinks
-permalink: pretty
-timezone: Europe/London
+# GitHub branch name for this site (your repo uses "master")
+branch: master
 
-# Where Jekyll should look for additional content
-include:
-  - _pages
-
-# Navigation (these files must exist in your repo)
+# Pages to include in the top navigation
 nav_pages:
   - index.html
   - _pages/about.md
 
-# Contact / social links used by Retlab
+# Pages to link in the footer (optional, create this file later if you like)
+footer_pages:
+  - _pages/fine-print.md
+
+# Social / contact links (used by Retlab)
 contact_links:
   - name: Email
     url: "mailto:c.leonardi95@protonmail.com"
@@ -35,7 +45,7 @@ contact_links:
     url: "https://scholar.google.com/citations?user=K723OxUAAAAJ&hl=en"
     icon: graduation-cap
 
-# Front matter defaults – use layouts Retlab actually provides
+# Front matter defaults – layouts that Retlab actually provides
 defaults:
   - scope:
       path: ""
@@ -50,18 +60,7 @@ defaults:
       layout: page
       comments: false
 
-# Plugins (all compatible with GitHub Pages)
-plugins:
-  - jekyll-seo-tag
-  - jekyll-avatar
-  - jekyll-github-metadata
-  - jekyll-feed
-  - jekyll-include-cache
-  - jekyll-sitemap
-  - jemoji
-  - jekyll-paginate
-
-# Things not to process
+# Exclude from build
 exclude:
   - vendor/bundle/
   - node_modules/
@@ -73,3 +72,6 @@ exclude:
   - "*.gemspec"
   - "*.json"
   - "*.ts"
+
+# Pretty URLs for posts/pages
+permalink: pretty
