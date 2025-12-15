@@ -53,6 +53,3 @@ When I’m not thinking about models and data, I enjoy:
 - Reading widely across biology, AI, and their ethical and societal implications. I am especially fascinated by how biological regulatory programs evolve over time, and how biological innovation might be hidden in yet-unexplored organisms and lineages  
 - Cycling around Cambridgeshire and reading about continental philosophy, ontology, and the philosophy of language
 
----
-
-If you would like to know more about my work, please have a look at the **Research** and **Publications** sections of this site, or get in touch via the contact links in the sidebar.
