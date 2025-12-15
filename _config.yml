@@ -3,24 +3,18 @@ description: "Computational Immunology, AI, Computational Biology"
 email: "c.leonardi95@protonmail.com"
 lang: en-GB
 
-plugins:
-  - jekyll-remote-theme
-  - jekyll-seo-tag
-  - jekyll-avatar
-  - jekyll-github-metadata
-  - jekyll-feed
-  - jekyll-include-cache
-  - jekyll-sitemap
-  - jemoji
-  - jekyll-paginate
-
 remote_theme: benbalter/retlab
-branch: master
+
+permalink: pretty
+timezone: Europe/London
+
+include:
+  - _pages
+
 nav_pages:
   - index.html
-  - _pages/about.md
-footer_pages:
-  - _pages/fine-print.md
+  - about.md
+
 
 contact_links:
   - name: Email
@@ -36,6 +30,7 @@ contact_links:
     url: "https://scholar.google.com/citations?user=K723OxUAAAAJ&hl=en"
     icon: graduation-cap
 
+
 defaults:
   - scope:
       path: ""
@@ -50,6 +45,18 @@ defaults:
       layout: page
       comments: false
 
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-avatar
+  - jekyll-github-metadata
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-sitemap
+  - jemoji
+  - jekyll-paginate
+
+
 exclude:
   - vendor/bundle/
   - node_modules/
@@ -61,5 +68,3 @@ exclude:
   - "*.gemspec"
   - "*.json"
   - "*.ts"
-
-permalink: pretty
