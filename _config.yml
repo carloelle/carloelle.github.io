@@ -19,13 +19,6 @@ include:
 nav_pages:
   - index.html
   - _pages/about.md
-  - _pages/research.md
-  - _pages/publications.md
-  - _pages/contact.md
-
-# Footer links (these also need to exist)
-footer_pages:
-  - _pages/fine-print.md
 
 # Contact / social links used by Retlab
 contact_links:
